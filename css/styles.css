@@ -788,6 +788,7 @@ input {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  fill: var(--navyblue, #2E2F42);;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -849,17 +850,13 @@ input {
   fill: transparent;
 }
 
-.modal-check-icon{
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-check:checked + .modal-check-text .modal-check-span {
+.input-check:checked + .modal-check-text > .modal-check-span {
   background-color: var(--ocean, #404bbf);
   border: none;
   fill: var(--cloud);
 }
 
-.input-check:focus + .modal-check-text .modal-check-span {
+.input-check:focus + .modal-check-text > .modal-check-span {
   border-color: var(--ocean, #404bbf);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
